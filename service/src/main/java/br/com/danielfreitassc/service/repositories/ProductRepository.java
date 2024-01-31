@@ -7,5 +7,6 @@ import br.com.danielfreitassc.service.models.ProductEntity;
 
 @Repository
 public interface ProductRepository extends JpaRepository <ProductEntity,Long>{
+
     
 }

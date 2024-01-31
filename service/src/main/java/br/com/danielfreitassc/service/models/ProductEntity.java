@@ -51,5 +51,4 @@ public class ProductEntity extends RepresentationModel implements Serializable{
     public void setValue(BigDecimal value) {
         this.value = value;
     }
-
 }

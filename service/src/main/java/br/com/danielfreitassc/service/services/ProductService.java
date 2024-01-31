@@ -73,5 +73,4 @@ public class ProductService {
         BeanUtils.copyProperties(productRecordDTO, productEntity);
         return ResponseEntity.status(HttpStatus.OK).body(productRepository.save(productEntity));
     }
-
 }

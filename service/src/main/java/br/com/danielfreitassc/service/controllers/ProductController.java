@@ -53,6 +53,4 @@ public class ProductController {
    public ResponseEntity<Object> deleteProduct(@PathVariable(value = "id")Long id) {
     return productService.deleteProduct(id);
    }
-
-
 }
