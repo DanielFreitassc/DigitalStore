@@ -1,0 +1,14 @@
+services:
+  minio:
+    image: quay.io/minio/minio
+    container_name: minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: ROOTUSER
+      MINIO_ROOT_PASSWORD: "CHANGEME123"
+      MINIO_BROWSER_UPLOAD_LIMIT: "15M"
+    volumes:
+      - H:/Projetos/fotos-minio:/data
+    command: server /data --console-address ":9001"

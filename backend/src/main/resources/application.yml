@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: backend
+    datasource:
+        url: jdbc:h2:mem:/api
+        username: admin
+        password: 
+    jpa:
+     hibernate:
+        ddl-auto: update
