@@ -2,14 +2,8 @@ package com.danielfreitassc.backend.controllers;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 import com.danielfreitassc.backend.dtos.ProductRequestDto;
 import com.danielfreitassc.backend.dtos.ProductResponseDto;
@@ -25,6 +19,7 @@ public class ProductController {
     private final ProductService productService;
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public ProductResponseDto createProduct(@ModelAttribute @Valid ProductRequestDto productRequestDto) throws Exception {
         return productService.createProduct(productRequestDto);
     }
