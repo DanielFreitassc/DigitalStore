@@ -268,4 +268,3 @@ Base URL: `http://localhost:8080`
   "createdAt": "2025-03-09T22:00:19.196698"
 }
 ```
-
