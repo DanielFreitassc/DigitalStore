@@ -251,6 +251,7 @@ Base URL: `http://localhost:8080`
 ]
 ```
 
+
 ---
 
 ### **Buscar Uma Mensagem Única por ID**
